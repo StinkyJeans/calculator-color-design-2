@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/calculator.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <input type="text" id="inputs" readonly>
+        <div class="buttons-row">
+            <input type="button" value="1" onclick="addToInputs('1')">
+            <input type="button" value="2" onclick="addToInputs('2')">
+            <input type="button" value="3" onclick="addToInputs('3')">
+            <div class="operators">
+                <input type="button" value="+" onclick="addToInputs('+')" >
+                
+            </div>
+        </div>
+        <div class="buttons-row">
+            <input type="button" value="4" onclick="addToInputs('4')">
+            <input type="button" value="5" onclick="addToInputs('5')">
+            <input type="button" value="6" onclick="addToInputs('6')">
+            <div class="operators">
+                <input type="button" value="-" onclick="addToInputs('-')" style="margin-right: 4px;" >
+            </div>
+        </div>
+        <div class="buttons-row">
+            <input type="button" value="7" onclick="addToInputs('7')">
+            <input type="button" value="8" onclick="addToInputs('8')">
+            <input type="button" value="9" onclick="addToInputs('9')" >
+            <div class="operators">
+                <input type="button" value="x" onclick="addToInputs('x')">
+            </div>
+        </div>
+        <div class="buttons-row">
+            <input type="button" value="0" onclick="addToInputs('0')">
+            <input type="button" value="C" onclick="clearInput()" style="background: #C57F1E; color: #000000;
+            font-weight: bold;" onmouseover="this.style.background='#BEA88E'" onmouseout="this.style.background='#C57F1E'">
+            <input type="button" value="=" onclick="calculate()" style="background: #C57F1E; color: #000000;
+            font-weight: bold;" onmouseover="this.style.background='#BEA88E'" onmouseout="this.style.background='#C57F1E'">
+            <div class="operators">
+                <input type="button" value="/" onclick="addToInputs('/')" style="margin-right: 4px;">
+            </div>
+        </div>
+        <div class="button-row-modulo">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="operators">
+                <input type="button" value="%" onclick="addToInputs('%')" style="padding-right: 25px; padding-left:10px;">
+            </div>
+        </div>
+            
+    </div>
+
+    <script src="/script/calc.js"></script>
+</body>
+</html>
